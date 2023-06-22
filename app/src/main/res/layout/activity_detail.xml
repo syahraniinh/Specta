@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/iv_gambar_cafe"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:outlineAmbientShadowColor="@color/brown"
+        android:src="@drawable/houseofluck" />
+
+    <TextView
+        android:id="@+id/tv_nama_cafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="House Of Luck"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_gambar_cafe"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informasi Cafe"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama_cafe"
+        android:layout_marginStart="20dp"/>"
+
+    <ImageView
+        android:id="@+id/ic_lokasi"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_location_on_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_lokasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Palembang"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/ic_lokasi"
+        app:layout_constraintStart_toEndOf="@id/ic_lokasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/ic_rating"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_star_rate_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lokasi"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="5/5"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/ic_rating"
+        app:layout_constraintStart_toEndOf="@id/ic_rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/ic_telephone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_phone_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rating"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_telephone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="083182945172"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/ic_telephone"
+        app:layout_constraintStart_toEndOf="@id/ic_telephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_tentang_cafe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tentang Cafe"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/ic_telephone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_isi_tentang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="House of luck cafe yang bernuansa putih dan biru pada ruangannya, terdapat ruangan indoor maupun outdoor yang sangat instagramable untuk para remaja. house of luck berada di tengah kota palembang yang sangat mudah sekali untuk di jangkau. untuk menu makanan dan minuman yang disediakan oleh cafe ini juga enak dan juga affordable di kantong dengan kisaran Rp.30.000 sampai dengan Rp. 50.000."
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tentang_cafe"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="15dp"/>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
