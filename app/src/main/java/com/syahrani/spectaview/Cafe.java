@@ -6,10 +6,10 @@ public class Cafe {
     private String deskripsi_cafe;
     private String lokasi_cafe;
     private String rating_cafe;
-    private String jam_operasional;
+    private  String jam_operasional;
     private String link_foto;
 
-    public String getId() 
+    public String getId() {
         return id;
     }
 
