@@ -154,13 +154,13 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("MainActivity", "Response: " + response.code());
                 if (response.code() == 200) {
                     int success = response.body().getSuccess();
-                    String message = response.body().getMessage();
+                    String message = String.valueOf(response.body().getMessage());
 
                     if (success == 1) {
                         List<DataItem> dataCafe = response.body().getData();
 
                         Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
-                        CafeViewAdapter.setData(dataCafe);
+                        CafeViewAdapter.setData
 
 
                     }

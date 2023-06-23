@@ -20,7 +20,7 @@ public class CafeViewAdapter extends RecyclerView.Adapter<CafeViewAdapter.ViewHo
     private List<DataItem> data = new ArrayList<>();
     private OnItemLongClickListener onItemLongClickListener;
 
-    public static void setData(List<DataItem> data){
+    public void setData(List<DataItem> data){
         this.data = data;
         notifyDataSetChanged();
     }

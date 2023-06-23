@@ -71,9 +71,12 @@ public class Cafe {
         return 0;
     }
 
-    public String getMessage() {
+    public int getMessage() {
+        return 0;
     }
 
-    public List<DataItem> getData() {
 
+    public List<DataItem> getData() {
+        return null;
+    }
 }
