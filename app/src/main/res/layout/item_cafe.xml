@@ -37,28 +37,32 @@
             android:layout_toEndOf="@+id/iv_foto"
             android:layout_below="@+id/tv_judul"/>
 
-        <ImageView
-            android:id="@+id/ic_kalender"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/baseline_access_time_24"
-            android:layout_toEndOf="@+id/iv_foto"
-            android:layout_below="@+id/ic_lokasi"/>
 
         <ImageView
-            android:id="@+id/ic_rating"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/baseline_star_rate_24"
-            android:layout_below="@id/ic_kalender"
-            android:layout_toEndOf="@id/iv_foto"/>
+            android:layout_toEndOf="@+id/iv_foto"
+            android:layout_below="@+id/tv_lokasi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5/5"
+            android:layout_below="@id/tv_lokasi"
+            android:layout_toEndOf="@id/ic_lokasi"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:justificationMode="inter_word" />
 
 
         <TextView
-            android:id="@+id/tv_tempat"
+            android:id="@+id/tv_lokasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jakabaring, Palembang"
+            android:text="JL. Rajawali, Palembang"
             android:layout_below="@id/tv_judul"
             android:layout_toEndOf="@id/ic_lokasi"
             android:layout_marginStart="5dp"
@@ -67,18 +71,7 @@
             android:ellipsize="end"
             android:justificationMode="inter_word"/>
 
-        <TextView
-            android:id="@+id/tv_tanggal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="19 Januari 2024"
-            android:layout_below="@id/tv_tempat"
-            android:layout_toEndOf="@id/ic_kalender"
-            android:layout_marginStart="5dp"
-            android:textSize="18sp"
-            android:maxLines="2"
-            android:ellipsize="end"
-            android:justificationMode="inter_word"/>
+
 
 
     </RelativeLayout>

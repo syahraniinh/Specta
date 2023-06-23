@@ -1,12 +1,14 @@
 package com.syahrani.spectaview;
 
+import java.util.List;
+
 public class Cafe {
     private String id;
     private String nama_cafe;
     private String deskripsi_cafe;
     private String lokasi_cafe;
     private String rating_cafe;
-    private  String jam_operasional;
+    private String jam_operasional;
     private String link_foto;
 
     public String getId() {
@@ -64,4 +66,14 @@ public class Cafe {
     public void setLink_foto(String link_foto) {
         this.link_foto = link_foto;
     }
+
+    public int getSuccess() {
+        return 0;
+    }
+
+    public String getMessage() {
+    }
+
+    public List<DataItem> getData() {
+
 }
