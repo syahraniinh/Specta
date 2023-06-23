@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Util {
     public static final String PREFERENCE_FILE_KEY = Util.class.getPackage().getName();
-    private static final String BASE_URL = " ";
+    private static final String BASE_URL = "http://192.168.1.11:3000/api/ ";
     public static Retrofit retrofit;
 
     public static Retrofit getRetrofit(){

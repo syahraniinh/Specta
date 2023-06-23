@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.syahrani.spectaview.databinding.ActivityMainBinding;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -25,6 +26,8 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private CafeViewAdapter cafeViewAdapter;
+    private List <Cafe> data;
+    private int DataItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                                 String id = input.getId();
                                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                                 builder.setTitle("Konfirmasi");
-                                builder.setMessage("Yakin Ingin Menghapus Konser" + input.getNamaCafe() + "?");
+                                builder.setMessage("Yakin Ingin Menghapus Cafe" + input.getNamaCafe() + "?");
                                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
@@ -160,8 +163,8 @@ public class MainActivity extends AppCompatActivity {
                         List<DataItem> dataCafe = response.body().getData();
 
                         Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
-                        CafeViewAdapter.setData
-
+                        cafeViewAdapter.setData(dataCafe);
+                        data = new ArrayList<>(DataItem);
 
                     }
                 }
